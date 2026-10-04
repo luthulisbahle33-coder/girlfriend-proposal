@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff4f4">
+    <meta name="description" content="A little pink scrapbook made for Khanya, with our jokes, songs, and a question from my heart.">
+    <meta property="og:title" content="For Khanya, with all my heart">
+    <meta property="og:description" content="A little pink scrapbook made for Khanya, with our jokes, songs, and a question from my heart.">
+    <meta property="og:type" content="website">
+    <title>For Khanya, with all my heart</title>
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="./script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#scrapbook">Skip to the scrapbook</a>
+    <div class="paper-grain" aria-hidden="true"></div>
+    <svg class="kitty-library" aria-hidden="true" focusable="false">
+      <symbol id="hello-kitty-face" viewBox="0 0 120 100">
+        <path d="M21 35 17 14l22 11c11-4 31-4 42 0l22-11-4 23c6 8 9 17 9 26 0 19-16 28-48 28S12 80 12 61c0-10 3-19 9-26Z" fill="#fffefa" stroke="#66454d" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M29 25C15 10 5 14 7 22c1 5 9 8 21 10m5-7c15-16 25-11 23-3-1 5-9 8-21 10" fill="#e83d55" stroke="#9f283c" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="31" cy="27" r="4" fill="#ffc6cd" stroke="#9f283c" stroke-width="2"/>
+        <ellipse cx="43" cy="57" rx="2.8" ry="4" fill="#3f3438"/>
+        <ellipse cx="78" cy="57" rx="2.8" ry="4" fill="#3f3438"/>
+        <ellipse cx="60" cy="65" rx="4.2" ry="3.2" fill="#f4c542" stroke="#9b7b26" stroke-width="1.2"/>
+        <path d="m28 58-13-3m13 9-14 1m14 5-12 5m71-17 13-3m-13 9 14 1m-14 5 12 5" fill="none" stroke="#66454d" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="34" cy="68" r="3.1" fill="#f3a8ae" opacity=".65"/>
+        <circle cx="86" cy="68" r="3.1" fill="#f3a8ae" opacity=".65"/>
+      </symbol>
+    </svg>
+
+    <main>
+      <section class="opening" aria-labelledby="opening-title">
+        <div class="opening-topline">
+          <span class="hello-kitty hello-kitty-top" role="img" aria-label="Hello Kitty sticker"><svg viewBox="0 0 120 100" aria-hidden="true"><use href="#hello-kitty-face"></use></svg></span>
+          <span class="tiny-seal" aria-hidden="true">♡</span>
+          <span>A tiny Hello Kitty love letter, made just for you</span>
+          <span class="topline-date">with love, always</span>
+        </div>
+
+        <div class="opening-layout">
+          <div class="opening-copy">
+            <p class="eyebrow">SIDE A · OUR LITTLE STORY</p>
+            <h1 id="opening-title">For my<br><em>sweet Khanya.</em></h1>
+            <p class="opening-intro">A few songs, a few memories, and one very important question.</p>
+            <div class="opening-doodle" aria-hidden="true">
+              <svg viewBox="0 0 180 82" fill="none">
+                <path d="M5 63c31-23 42-18 63-18s38-18 62-15 29 14 45 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 6"/>
+                <path d="M143 23c-9 5-10 15-4 21 5 6 14 4 18-2 5-7 1-16-7-19l-3-8-4 8Z" fill="#f8a9bb" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                <path d="M150 25c-5-7-14-5-13 2 1 4 7 6 13 9 5-3 12-6 12-11 0-7-9-8-12 0Z" fill="#ec6c8c" stroke="currentColor" stroke-width="1.5"/>
+                <path d="m31 17 2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5Z" fill="#e9859c"/>
+                <path d="m99 61 1.5 3.5L104 66l-3.5 1.5L99 71l-1.5-3.5L94 66l3.5-1.5L99 61Z" fill="#e9859c"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="player-wrap">
+            <span class="tape tape-player" aria-hidden="true"></span>
+            <div class="player-card">
+              <div class="player-heading">
+                <span class="player-label">A SONG TO START US</span>
+                <span class="vinyl-mark" aria-hidden="true">♡</span>
+              </div>
+              <div class="player-main">
+                <div class="album-art">
+                  <img src="https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/90/65/8f/90658ff0-d8c0-ab9c-e5c3-66dfe83019cf/0892038002398_Cover.jpg/500x500bb.jpg" alt="Camp album cover by Childish Gambino" width="500" height="500">
+                </div>
+                <div class="track-meta">
+                  <p class="track-kicker">THE FIRST PAGE</p>
+                  <h2>Letter Home</h2>
+                  <p>Childish Gambino</p>
+                  <span class="official-badge"><span aria-hidden="true">●</span> Apple Music player</span>
+                </div>
+              </div>
+              <div class="player-controls">
+                <button class="play-button" id="playLetterHome" type="button" aria-expanded="false" aria-controls="appleMusicEmbed">
+                  <span class="play-icon" aria-hidden="true">▶</span>
+                  <span id="playLabel">OPEN APPLE MUSIC</span>
+                </button>
+                <div class="player-progress" aria-hidden="true"><span></span></div>
+                <div class="player-foot"><span>OUR OPENING TRACK</span><span>♡</span></div>
+              </div>
+              <div class="applemusic-slot" id="appleMusicEmbed" hidden>
+                <iframe
+                  title="Apple Music player for Letter Home by Childish Gambino"
+                  data-embed-url="https://embed.music.apple.com/za/album/letter-home/1771713810?i=1771714187"
+                  width="100%" height="175" frameborder="0"
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                  referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <a class="applemusic-fallback" href="https://music.apple.com/za/album/letter-home/1771713810?i=1771714187" target="_blank" rel="noopener noreferrer">If the player doesn’t load, open Letter Home in Apple Music ↗</a>
+              </div>
+            </div>
+            <p class="play-prompt">Tap play in Apple Music before you continue <span aria-hidden="true">♡</span></p>
+            <span class="player-sticker" aria-hidden="true">made<br>with love</span>
+          </div>
+        </div>
+
+        <a class="scroll-cue" href="#scrapbook">
+          <span>turn the page</span>
+          <span class="scroll-arrow" aria-hidden="true">↓</span>
+        </a>
+        <span class="edge-note" aria-hidden="true">a keepsake for N.M.M.</span>
+      </section>
+
+      <section class="intro section-pad" id="scrapbook" aria-labelledby="intro-title">
+        <div class="section-index"><span>01</span><span class="index-line"></span><span>THE BEGINNING</span></div>
+        <div class="intro-center reveal">
+          <span class="cat-sticker hello-kitty hello-kitty-main" role="img" aria-label="Hello Kitty with her red bow">
+            <svg viewBox="0 0 120 100" aria-hidden="true"><use href="#hello-kitty-face"></use></svg>
+          </span>
+          <p class="eyebrow">A NOTE FROM ME TO YOU</p>
+          <h2 id="intro-title">A little something for<br><em>my favourite person...</em></h2>
+          <p class="handwritten intro-whisper">Keep scrolling, sweet baby ♡</p>
+          <div class="intro-flower" aria-hidden="true">✳</div>
+        </div>
+        <div class="intro-margin-note" aria-hidden="true">open whenever<br>you need a smile</div>
+      </section>
+
+      <section class="memory memory-first section-pad" aria-labelledby="memory-one-title">
+        <div class="section-index"><span>02</span><span class="index-line"></span><span>THINGS I LOVE</span></div>
+        <div class="memory-layout">
+          <figure class="polaroid photo-one reveal">
+            <span class="tape tape-photo" aria-hidden="true"></span>
+            <div class="photo-window">
+              <img src="photos/photo-01.jpg" alt="Khanya in a pink top, sitting in warm sunlight" loading="lazy">
+              <div class="photo-placeholder" aria-hidden="true">
+                <span class="placeholder-spark">✳</span>
+                <span>PHOTO 01</span>
+                <small>your favorite smile goes here</small>
+              </div>
+            </div>
+            <figcaption>the smile that gets me every time</figcaption>
+            <span class="photo-corner-heart" aria-hidden="true">♡</span>
+          </figure>
+          <div class="memory-note reveal">
+            <p class="eyebrow">A SMALL, VERY TRUE LIST</p>
+            <h2 id="memory-one-title">My sweet<br><em>Baby Khanya,</em></h2>
+            <p class="letter-copy">when I told you I loved you, it meant I loved your smile, your heart, your laugh, your hugs, the fact that you cannot drive straight in car games and how you’re a sweat in Roblox games.</p>
+            <div class="note-tail handwritten">every single bit of you <span aria-hidden="true">♡</span></div>
+          </div>
+        </div>
+        <span class="margin-sticker sticker-game" aria-hidden="true"><span class="game-doodle">▧</span> player two<br>of my heart</span>
+        <span class="affirmation affirmation-one handwritten">Roblox Sweat</span>
+      </section>
+
+      <section class="memory memory-second section-pad" aria-labelledby="memory-two-title">
+        <div class="section-index"><span>03</span><span class="index-line"></span><span>THE INSIDE JOKES</span></div>
+        <div class="memory-layout reverse">
+          <div class="memory-note mischievous reveal">
+            <span class="scribble-heart" aria-hidden="true">♡</span>
+            <p class="eyebrow">DON'T LOOK AT ME LIKE THAT</p>
+            <h2 id="memory-two-title">Mosili, when I see you,</h2>
+            <p class="letter-copy">my heart flutters and it’s hard for me to think straight because all I think about is you, and you might be gay.</p>
+            <div class="note-tail handwritten">I said what I said <span aria-hidden="true">♡</span></div>
+          </div>
+          <figure class="polaroid photo-two reveal">
+            <span class="tape tape-photo tape-coral" aria-hidden="true"></span>
+            <div class="photo-window photo-window-tall">
+              <img src="photos/photo-02.jpg" alt="Khanya in pink pajamas with a little star sticker" loading="lazy">
+              <div class="photo-placeholder" aria-hidden="true">
+                <span class="placeholder-spark">✿</span>
+                <span>PHOTO 02</span>
+                <small>one of our silly little moments</small>
+              </div>
+            </div>
+            <figcaption>evidence that I am very normal about you</figcaption>
+          </figure>
+        </div>
+        <span class="affirmation affirmation-two handwritten">W girlfriend in the chat</span>
+        <span class="margin-doodle" aria-hidden="true">♡<small>!!</small></span>
+      </section>
+
+      <section class="memory memory-third section-pad" aria-labelledby="memory-three-title">
+        <div class="section-index"><span>04</span><span class="index-line"></span><span>OUR KIND OF COMFORT</span></div>
+        <div class="tea-scene reveal" aria-hidden="true">
+          <svg viewBox="0 0 188 132" fill="none">
+            <path d="M34 53h80v31c0 19-15 34-34 34H68c-19 0-34-15-34-34V53Z" fill="#fff8f3" stroke="#9a6170" stroke-width="3"/>
+            <path d="M114 61h17c15 0 18 25 3 33h-20" stroke="#9a6170" stroke-width="3" stroke-linecap="round"/>
+            <path d="M26 121h115" stroke="#9a6170" stroke-width="3" stroke-linecap="round"/>
+            <path d="M59 41c-7-12 7-15 0-27m25 27c-7-12 7-15 0-27" stroke="#e8879e" stroke-width="3" stroke-linecap="round"/>
+            <path d="M74 67c5-8 15-8 20 0 0 8-10 16-10 16s-10-8-10-16Z" fill="#ee91a5"/>
+            <path d="m154 33 3 7 8 3-8 3-3 8-3-8-8-3 8-3 3-7Z" fill="#ec8099"/>
+            <path d="m23 31 2 5 6 2-6 2-2 6-2-6-6-2 6-2 2-5Z" fill="#ec8099"/>
+          </svg>
+          <span class="tea-steam">a proper cuppa</span>
+        </div>
+        <div class="memory-layout memory-tea">
+          <figure class="polaroid photo-three reveal">
+            <span class="tape tape-photo" aria-hidden="true"></span>
+            <div class="photo-window photo-window-wide">
+              <img src="photos/photo-03.jpg" alt="A close selfie of the two of us together" loading="lazy">
+              <div class="photo-placeholder" aria-hidden="true">
+                <span class="placeholder-spark">♡</span>
+                <span>PHOTO 03</span>
+                <small>our tea-and-talking era</small>
+              </div>
+            </div>
+            <figcaption>Kisses on the cheek</figcaption>
+          </figure>
+          <div class="memory-note warm-note reveal">
+            <p class="eyebrow">THE BEST KIND OF CATCH-UP</p>
+            <h2 id="memory-three-title">Mahlobo,</h2>
+            <p class="letter-copy">you always seem to know just what to say, and when to say it, I love spilling tea with you, even though we’re both addicted to tea.</p>
+            <div class="note-tail handwritten">save me the last sip? <span aria-hidden="true">♡</span></div>
+          </div>
+        </div>
+        <span class="affirmation affirmation-three handwritten">Sweet baby Khanya</span>
+        <span class="tea-margin handwritten">tea, then tea about the tea</span>
+      </section>
+
+      <section class="little-notes section-pad" aria-label="Little things I know about you">
+        <div class="little-notes-heading reveal">
+          <p class="eyebrow">THE STICKY NOTES ON MY HEART</p>
+          <h2>Things that are just<br><em>very, very you.</em></h2>
+        </div>
+        <div class="note-scatter">
+          <div class="sticky-note sticky-one reveal"><span>♥</span><p>Princess Sbahle</p></div>
+          <div class="sticky-note sticky-two reveal"><span>✳</span><p>Murder mystery 2 sweat</p></div>
+          <div class="sticky-note sticky-three reveal"><span>♡</span><p>You gotta say yes btw</p></div>
+        </div>
+        <p class="note-foot handwritten">I keep finding more reasons, by the way.</p>
+      </section>
+
+      <section class="songs section-pad" aria-labelledby="songs-title">
+        <div class="section-index"><span>05</span><span class="index-line"></span><span>THE SOUNDTRACK</span></div>
+        <div class="songs-heading reveal">
+          <div>
+            <p class="eyebrow">HELLO KITTY APPROVES THIS LITTLE SOUNDTRACK</p>
+            <h2 id="songs-title">If you were a playlist,<br><em>I'd leave you on repeat.</em></h2>
+          </div>
+          <p class="songs-aside handwritten">some are songs.<br>some are just how you feel. <span aria-hidden="true">♡</span></p>
+        </div>
+        <div class="playlist-paper reveal">
+          <div class="playlist-top"><span>KHANYA, IN SONGS</span><span>6 little reminders · no skips</span><span class="playlist-kitty" aria-hidden="true"><svg viewBox="0 0 120 100"><use href="#hello-kitty-face"></use></svg></span></div>
+          <div class="song-list" aria-label="Six song-cover Polaroids; select a card to open the song on Apple Music">
+            <a class="song-card" href="https://music.apple.com/us/album/space/1708246746?i=1708247382" target="_blank" rel="noopener noreferrer">
+              <span class="song-art"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/1c/99/ad/1c99ad75-d98b-2309-41e5-ca1419416815/193436357012_THELOVEALBUM.jpg/500x500bb.jpg" alt="The Love Album: Off the Grid cover art" loading="lazy" width="500" height="500"></span>
+              <span class="song-detail"><strong>Space</strong><small>Diddy &amp; H.E.R.</small></span>
+              <span class="song-note">you, on my mind</span>
+              <span class="song-heart" aria-hidden="true">↗</span>
+            </a>
+            <a class="song-card" href="https://music.apple.com/us/album/skin/1147227630?i=1147227704" target="_blank" rel="noopener noreferrer">
+              <span class="song-art"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/1e/5c/ad/1e5cadeb-6f0c-86a0-9e85-6487a848d866/093624917168.jpg/500x500bb.jpg" alt="The Divine Feminine album cover art" loading="lazy" width="500" height="500"></span>
+              <span class="song-detail"><strong>Skin</strong><small>Mac Miller</small></span>
+              <span class="song-note">soft place to land</span>
+              <span class="song-heart" aria-hidden="true">↗</span>
+            </a>
+            <a class="song-card" href="https://music.apple.com/us/album/needy/1450333975?i=1450334157" target="_blank" rel="noopener noreferrer">
+              <span class="song-art"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bb/69/07/bb6907de-8ad4-970b-3311-121320e1bf9c/19UMGIM03691.rgb.jpg/500x500bb.jpg" alt="thank u, next album cover art" loading="lazy" width="500" height="500"></span>
+              <span class="song-detail"><strong>Needy</strong><small>Ariana Grande</small></span>
+              <span class="song-note">a little too relatable</span>
+              <span class="song-heart" aria-hidden="true">↗</span>
+            </a>
+            <a class="song-card" href="https://music.apple.com/za/album/everything/1621354546?i=1621355202" target="_blank" rel="noopener noreferrer">
+              <span class="song-art"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/66/a8/de/66a8de5e-ad81-57b4-3183-25a9779845f5/075679779731.jpg/500x500bb.jpg" alt="blue water road album cover art" loading="lazy" width="500" height="500"></span>
+              <span class="song-detail"><strong>Everything</strong><small>Kehlani</small></span>
+              <span class="song-note">that says it all</span>
+              <span class="song-heart" aria-hidden="true">↗</span>
+            </a>
+            <a class="song-card" href="https://music.apple.com/za/album/tender-love-feat-dj-maphorisa-kabza-de-small/1482111511?i=1482111529" target="_blank" rel="noopener noreferrer">
+              <span class="song-art"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/25/a4/a4/25a4a461-d553-3894-5c08-940c094ea669/886447898963.jpg/500x500bb.jpg" alt="Blossom EP cover art" loading="lazy" width="500" height="500"></span>
+              <span class="song-detail"><strong>Tender Love</strong><small>Sha Sha</small></span>
+              <span class="song-note">exactly the feeling</span>
+              <span class="song-heart" aria-hidden="true">↗</span>
+            </a>
+            <a class="song-card" href="https://music.apple.com/za/album/everybody-here-wants-you/1476888879?i=1476888881" target="_blank" rel="noopener noreferrer">
+              <span class="song-art"><img src="https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ce/b3/69/ceb369a5-f124-e519-01ac-d0d3035c7bcd/886447680827.jpg/500x500bb.jpg" alt="Sketches for My Sweetheart the Drunk album cover art" loading="lazy" width="500" height="500"></span>
+              <span class="song-detail"><strong>Everybody Here Wants You</strong><small>Jeff Buckley</small></span>
+              <span class="song-note">I mean, obviously</span>
+              <span class="song-heart" aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <div class="playlist-bottom"><span>ALBUM-COVER POLAROIDS · TAP TO OPEN APPLE MUSIC</span><span>♡</span></div>
+        </div>
+        <p class="playlist-foot handwritten">The first song has an Apple Music player up top; tap a little cover to open any song. ♡</p>
+      </section>
+
+      <section class="more-memories section-pad" aria-labelledby="more-title">
+        <div class="section-index"><span>06</span><span class="index-line"></span><span>JUST US THINGS</span></div>
+        <div class="more-heading reveal">
+          <p class="eyebrow">A FEW MORE LITTLE FRAGMENTS</p>
+          <h2 id="more-title">My favorite place<br>is still <em>next to you.</em></h2>
+        </div>
+        <div class="collage">
+          <figure class="polaroid collage-photo collage-a reveal">
+            <span class="tape tape-photo tape-coral" aria-hidden="true"></span>
+            <div class="photo-window photo-window-short">
+              <img src="photos/photo-04.jpg" alt="Khanya taking a close selfie in a white top" loading="lazy">
+              <div class="photo-placeholder" aria-hidden="true"><span class="placeholder-spark">✳</span><span>PHOTO 04</span><small>one for the memory book</small></div>
+            </div>
+            <figcaption>the kind of day I wish I could keep</figcaption>
+          </figure>
+          <div class="collage-note collage-note-a handwritten reveal">you make ordinary<br>days feel like ours <span>♡</span></div>
+          <figure class="polaroid collage-photo collage-b reveal">
+            <span class="tape tape-photo" aria-hidden="true"></span>
+            <div class="photo-window photo-window-tall">
+              <img src="photos/photo-05.jpg" alt="Khanya with a skincare mask and colorful head wrap" loading="lazy">
+              <div class="photo-placeholder" aria-hidden="true"><span class="placeholder-spark">✿</span><span>PHOTO 05</span><small>an especially good day</small></div>
+            </div>
+            <figcaption>my person, in her element</figcaption>
+          </figure>
+          <div class="collage-note collage-note-b reveal"><span class="small-star" aria-hidden="true">✳</span><p>my favorite notification<br>is your name</p></div>
+          <figure class="polaroid collage-photo collage-c reveal">
+            <span class="tape tape-photo tape-lilac" aria-hidden="true"></span>
+            <div class="photo-window photo-window-short">
+              <img src="photos/photo-06.jpg" alt="Khanya taking a cozy selfie from bed" loading="lazy">
+              <div class="photo-placeholder" aria-hidden="true"><span class="placeholder-spark">♡</span><span>PHOTO 06</span><small>more memories go here</small></div>
+            </div>
+            <figcaption>one more, because I can</figcaption>
+          </figure>
+        </div>
+        <div class="extra-photos" aria-label="More little moments with Khanya">
+          <figure class="polaroid extra-photo reveal">
+            <div class="photo-window photo-window-tall"><img src="photos/photo-07.jpg" alt="Khanya taking a mirror selfie in a white top" loading="lazy"><div class="photo-placeholder" aria-hidden="true"><span class="placeholder-spark">✿</span><span>PHOTO 07</span><small>one more favorite view</small></div></div>
+            <figcaption>mirror check, but make it my favorite view</figcaption>
+          </figure>
+          <figure class="polaroid extra-photo reveal">
+            <div class="photo-window photo-window-tall"><img src="photos/photo-08.jpg" alt="A sleepy FaceTime moment under a fluffy blanket" loading="lazy"><div class="photo-placeholder" aria-hidden="true"><span class="placeholder-spark">♡</span><span>PHOTO 08</span><small>our late-night hello</small></div></div>
+            <figcaption>even a little hello feels like home</figcaption>
+          </figure>
+          <figure class="polaroid extra-photo reveal">
+            <div class="photo-window photo-window-tall"><img src="photos/photo-09.jpg" alt="Khanya taking a mirror selfie in a black top" loading="lazy"><div class="photo-placeholder" aria-hidden="true"><span class="placeholder-spark">✳</span><span>PHOTO 09</span><small>a look I love</small></div></div>
+            <figcaption>you make every mirror your moment</figcaption>
+          </figure>
+          <figure class="polaroid extra-photo reveal">
+            <div class="photo-window photo-window-tall"><img src="photos/photo-10.jpg" alt="Khanya taking a full-length mirror selfie in a black dress" loading="lazy"><div class="photo-placeholder" aria-hidden="true"><span class="placeholder-spark">✿</span><span>PHOTO 10</span><small>my favorite view, always</small></div></div>
+            <figcaption>my favorite view, in every outfit</figcaption>
+          </figure>
+          <figure class="polaroid extra-photo reveal">
+            <div class="photo-window photo-window-tall"><img src="photos/photo-11.jpg" alt="Our shoes side by side on a walk" loading="lazy"><div class="photo-placeholder" aria-hidden="true"><span class="placeholder-spark">♡</span><span>PHOTO 11</span><small>side by side</small></div></div>
+            <figcaption>side by side, wherever we go</figcaption>
+          </figure>
+          <figure class="polaroid extra-photo reveal">
+            <div class="photo-window photo-window-tall"><img src="photos/photo-12.jpg" alt="Khanya smiling in her pink bonnet" loading="lazy"><div class="photo-placeholder" aria-hidden="true"><span class="placeholder-spark">✳</span><span>PHOTO 12</span><small>my sleepy baby</small></div></div>
+            <figcaption>my sleepy baby, still the cutest</figcaption>
+          </figure>
+        </div>
+        <p class="gallery-kitty handwritten"><span class="hello-kitty hello-kitty-gallery" role="img" aria-label="Hello Kitty sticker"><svg viewBox="0 0 120 100" aria-hidden="true"><use href="#hello-kitty-face"></use></svg></span> a whole page of us, with Hello Kitty <span aria-hidden="true">♡</span></p>
+        <div class="more-footer handwritten">and still, these are only a few <span aria-hidden="true">♡</span></div>
+      </section>
+
+      <section class="build-up section-pad" aria-label="A little closer to the question">
+        <div class="build-up-stars" aria-hidden="true"><span>✳</span><span>♡</span><span>✦</span><span>✳</span><span>♡</span></div>
+        <p class="eyebrow reveal">ONE LAST PAGE, BABY</p>
+        <p class="build-up-line reveal">All the songs, all the jokes, all the little ordinary things...</p>
+        <h2 class="reveal">they keep bringing me<br>back to <em>you.</em></h2>
+        <span class="build-up-script handwritten reveal">so I made you this</span>
+        <div class="build-up-rule" aria-hidden="true"><span>♡</span></div>
+      </section>
+
+      <section class="final-page section-pad" aria-labelledby="proposal-title">
+        <div class="section-index"><span>07</span><span class="index-line"></span><span>THE MOST IMPORTANT PART</span></div>
+        <div class="final-layout">
+          <div class="heart-scene reveal">
+            <span class="heart-orbit orbit-one" aria-hidden="true">♡</span>
+            <span class="heart-orbit orbit-two" aria-hidden="true">✦</span>
+            <span class="heart-orbit orbit-three" aria-hidden="true">♡</span>
+            <span class="heart-bow" aria-hidden="true">
+              <svg viewBox="0 0 94 58">
+                <path d="M46 27C29 9 11 6 7 15c-4 10 10 25 36 18M48 27C65 9 83 6 87 15c4 10-10 25-36 18" fill="#ef7895" stroke="#9a4d62" stroke-width="2"/>
+                <circle cx="47" cy="29" r="7" fill="#ffd9df" stroke="#9a4d62" stroke-width="2"/>
+                <path d="m43 34-7 17 12-8 10 8-6-18" fill="#e56e89" stroke="#9a4d62" stroke-width="2" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <div class="heart-frame">
+              <svg class="heart-photo-svg" viewBox="0 0 500 460" role="img" aria-label="Khanya and I together, framed inside a pink heart">
+                <defs>
+                  <clipPath id="heartClip" clipPathUnits="userSpaceOnUse">
+                    <path d="M250 430C220 407 29 278 29 151 29 76 80 30 145 30c48 0 82 27 105 67 23-40 57-67 105-67 65 0 116 46 116 121 0 127-191 256-221 279Z"/>
+                  </clipPath>
+                  <pattern id="paperDots" width="22" height="22" patternUnits="userSpaceOnUse">
+                    <rect width="22" height="22" fill="#f8c5d0"/>
+                    <circle cx="4" cy="4" r="1.1" fill="#fff2f0" opacity=".72"/>
+                    <circle cx="15" cy="15" r=".8" fill="#d8758e" opacity=".3"/>
+                  </pattern>
+                </defs>
+                <path d="M250 430C220 407 29 278 29 151 29 76 80 30 145 30c48 0 82 27 105 67 23-40 57-67 105-67 65 0 116 46 116 121 0 127-191 256-221 279Z" fill="url(#paperDots)" stroke="#d96784" stroke-width="15" stroke-linejoin="round"/>
+                <g clip-path="url(#heartClip)">
+                  <rect x="22" y="22" width="456" height="420" fill="#fbe0e2"/>
+                  <g id="finalPhotoFallback">
+                    <path d="M32 78h436v335H32z" fill="#f9dbe0"/>
+                    <circle cx="250" cy="202" r="80" fill="#f7c1cd"/>
+                    <path d="M170 204c1-44 32-74 80-74s79 30 80 74c-18-18-39-24-58-21-26 5-44 16-67 19-14 2-25 1-35 2Z" fill="#fff5f0"/>
+                    <path d="M125 418c5-77 54-123 125-123s120 46 125 123" fill="#fff5f0"/>
+                    <path d="M182 208c7 7 18 7 25 0m86 0c7 7 18 7 25 0m-67 33c10 8 23 8 33 0" stroke="#a56772" stroke-width="5" stroke-linecap="round"/>
+                    <path d="m104 120 5 13 14 5-14 5-5 14-5-14-14-5 14-5 5-13Zm289 147 4 10 11 4-11 4-4 11-4-11-11-4 11-4 4-10ZM157 324l3 8 8 3-8 3-3 8-3-8-8-3 8-3 3-8Z" fill="#e77e97"/>
+                    <text x="250" y="377" text-anchor="middle" fill="#925b69" font-size="15" letter-spacing="3" font-family="sans-serif">OUR PHOTO GOES HERE</text>
+                  </g>
+                  <image id="finalCouplePhoto" href="photos/final-couple-photo.jpg" x="22" y="22" width="456" height="420" preserveAspectRatio="xMidYMid slice"/>
+                </g>
+                <path d="M250 430C220 407 29 278 29 151 29 76 80 30 145 30c48 0 82 27 105 67 23-40 57-67 105-67 65 0 116 46 116 121 0 127-191 256-221 279Z" fill="none" stroke="#fff8f5" stroke-width="4" stroke-dasharray="1 11" stroke-linecap="round"/>
+              </svg>
+              <span class="heart-label handwritten">our forever photo</span>
+            </div>
+            <p class="final-photo-caption handwritten">the one I want to look back on <span aria-hidden="true">♡</span></p>
+            <p class="photo-replacement-note">our first favorite photo together</p>
+          </div>
+
+          <div class="proposal-copy reveal">
+            <span class="hello-kitty proposal-kitty" role="img" aria-label="Hello Kitty cheering us on"><svg viewBox="0 0 120 100" aria-hidden="true"><use href="#hello-kitty-face"></use></svg></span>
+            <p class="eyebrow">I'VE BEEN WANTING TO ASK YOU</p>
+            <h2 id="proposal-title"><span>Nokukhanya</span><br><em>Mosili Mahlobo,</em></h2>
+            <p class="proposal-line">may you do me the grace and allow me to be your boyfriend? <span aria-hidden="true">♡</span></p>
+            <div class="proposal-rule" aria-hidden="true"><span>✳</span><i></i><span>♡</span><i></i><span>✳</span></div>
+            <p class="handwritten proposal-ps">with my whole heart, and absolutely no game driving skills</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="answer-section section-pad" aria-labelledby="answer-title">
+        <div class="answer-paper reveal">
+          <span class="answer-corner answer-corner-top" aria-hidden="true">✳</span>
+          <span class="answer-corner answer-corner-bottom" aria-hidden="true">♡</span>
+          <span class="hello-kitty answer-kitty" role="img" aria-label="Hello Kitty sticker"><svg viewBox="0 0 120 100" aria-hidden="true"><use href="#hello-kitty-face"></use></svg></span>
+          <p class="eyebrow">SO, MY SWEET BABY...</p>
+          <h2 id="answer-title">Will you be<br><em>my girlfriend?</em> <span aria-hidden="true">♡</span></h2>
+          <p class="answer-instruction">There is a very obvious favorite answer. Just saying.</p>
+          <div class="answer-buttons">
+            <button class="yes-button" id="yesButton" type="button">YES <span aria-hidden="true">♡</span></button>
+            <div class="no-stage" id="noStage">
+              <button class="no-button" id="noButton" type="button" aria-describedby="noHint">NO</button>
+            </div>
+          </div>
+          <p class="no-hint" id="noHint">The NO button is joking around. It will calm down, promise.</p>
+          <p class="no-message" id="noMessage" role="status" aria-live="polite" hidden>Just teasing, sweet baby. No pressure at all — you can leave this page whenever you like. ♡</p>
+        </div>
+      </section>
+
+      <section class="celebration" id="celebration" aria-labelledby="celebration-title" hidden>
+        <div class="celebration-confetti" id="confetti" aria-hidden="true"></div>
+        <div class="celebration-content">
+          <span class="celebration-bow" aria-hidden="true">♡</span>
+          <p class="eyebrow">THE HAPPIEST PAGE</p>
+          <h2 id="celebration-title">SHE SAID YES!!! <span aria-hidden="true">♡</span></h2>
+          <div class="celebration-divider" aria-hidden="true">✳　♡　✳</div>
+          <p class="celebration-love">I love you, Baby Khanya <span aria-hidden="true">♡</span></p>
+          <p class="handwritten celebration-us">Here's to us.</p>
+          <p class="celebration-signoff">I’m going to remember this forever.</p>
+          <button type="button" class="replay-button" id="replayButton">read our little story again ↑</button>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <span>MADE FOR NOKUKHANYA · WITH ALL MY LOVE</span>
+        <span aria-hidden="true">♡</span>
+        <a href="#opening-title">back to the first page ↑</a>
+      </footer>
+    </main>
+  </body>
+</html>
